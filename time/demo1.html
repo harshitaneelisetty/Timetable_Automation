@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+            <html>
+            <head>
+            <meta content = "text/html; charset = UTF-8"
+            http-equip = "content-type">
+            <style>
+            td {
+                padding :0 15px;
+            }
+            </style>
+            <title>Time Table</title>
+            </head>
+            <body>
+                <center>
+                <div class="card" id="generatePDF">
+            <center>
+            <div class="card" id="generatePDF">
+            <br><br>
+         
+            <center>
+            <h3>IICSEB</h3>
+            <table border = 1>
+            ['<tr><td>Day</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>', '<tr><td>Mon</td>', '<td>JAVA</td>', '<td>CMHWlab</td>', '<td>CMHWlab</td>', '<td>CMHWlab</td>', '<td>PS</td>', '<td>DLD</td>', '<td>SE</td>', '<td>DM</td></tr>', '<tr><td>Tue</td>', '<td>----</td>', '<td>JAVA</td>', '<td>DLD</td>', '<td>----</td>', '<td>DM</td>', '<td>PS</td>', '<td>SE</td>', '<td>----</td></tr>', '<tr><td>Wed</td>', '<td>DLD</td>', '<td>PS</td>', '<td>JAVA</td>', '<td>SE</td>', '<td>DM</td>', '<td>JAVAlab</td>', '<td>JAVAlab</td>', '<td>JAVAlab</td></tr>', '<tr><td>Thr</td>', '<td>SE</td>', '<td>JAVA</td>', '<td>DLD</td>', '<td>DM</td>', '<td>PS</td>', '<td>ARTSlab</td>', '<td>ARTSlab</td>', '<td>ARTSlab</td></tr>', '<tr><td>Fri</td>', '<td>DLD</td>', '<td>PS</td>', '<td>DM</td>', '<td>JAVA</td>', '<td>SE</td>', '<td>DVlab</td>', '<td>DVlab</td>', '<td>DVlab</td></tr>', '<tr><td>Sat</td>', '<td>DLD</td>', '<td>DM</td>', '<td>JAVA</td>', '<td>SE</td>', '<td>----</td>', '<td>----</td>', '<td>----</td>', '<td>PS</td></tr>']
+            </table>
+            </center>
+            <br><br>
+            
+            <center>
+            <h3>IICSEC</h3>
+            <table border = 1>
+            ['<tr><td>Day</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>', '<tr><td>Mon</td>', '<td>PS</td>', '<td>DLD</td>', '<td>SE</td>', '<td>DM</td>', '<td>JAVA</td>', '<td>CMHWlab</td>', '<td>CMHWlab</td>', '<td>CMHWlab</td></tr>', '<tr><td>Tue</td>', '<td>DLD</td>', '<td>DM</td>', '<td>JAVA</td>', '<td>SE</td>', '<td>PS</td>', '<td>DVlab</td>', '<td>DVlab</td>', '<td>DVlab</td></tr>', '<tr><td>Wed</td>', '<td>DLD</td>', '<td>JAVA</td>', '<td>DM</td>', '<td>PS</td>', '<td>SE</td>', '<td>ARTSlab</td>', '<td>ARTSlab</td>', '<td>ARTSlab</td></tr>', '<tr><td>Thr</td>', '<td>DM</td>', '<td>----</td>', '<td>PS</td>', '<td>----</td>', '<td>----</td>', '<td>DLD</td>', '<td>SE</td>', '<td>JAVA</td></tr>', '<tr><td>Fri</td>', '<td>JAVA</td>', '<td>----</td>', '<td>SE</td>', '<td>----</td>', '<td>----</td>', '<td>DLD</td>', '<td>DM</td>', '<td>PS</td></tr>', '<tr><td>Sat</td>', '<td>DLD</td>', '<td>JAVA</td>', '<td>PS</td>', '<td>SE</td>', '<td>DM</td>', '<td>JAVAlab</td>', '<td>JAVAlab</td>', '<td>JAVAlab</td></tr>']
+            </table>
+            </center>
+            <br><br>
+           
+           <center>
+           <h3>.</h3>
+            <table border = 1>
+            .
+            </table>
+            </center>
+            <br><br>
+            
+            <center>
+            <h3>.</h3>
+            <table border = 1>
+            .
+            </table>
+            </center>
+            
+     <button id="pdfButton"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzxA1IZaV_fN96xiySAwgY5iZiM-pIg9W9ig&usqp=CAU" style="height:30px;width:30px;"><b style="padding-bottom:5px;" class="text"> <center>&nbsp; &nbsp Download</center></b></button>
+  
+  </div>
+  </center>
+     <script>
+      var button = document.getElementById("pdfButton");
+      var makepdf = document.getElementById("generatePDF");
+      button.addEventListener("click", function () {
+         var mywindow = window.open("", "PRINT", "height=600,width=600");
+         mywindow.document.write(makepdf.innerHTML);
+         mywindow.document.close();
+         mywindow.focus();
+         mywindow.print();
+         return true;
+      });
+   </script>
+            </body>
+            </html>
+            

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+            <html>
+            <head>
+            <meta content = "text/html; charset = UTF-8"
+            http-equip = "content-type">
+            <style>
+            td {
+                padding :0 15px;
+            }
+            </style>
+            <title>Time Table</title>
+            </head>
+            <body>
+                <div class="card" id="generatePDF">
+
+            <br><br>
+            <center>
+            <br>
+            <h3> III-I CSE-B TIME-TABLE </h3>
+            <table border = 1>
+            ['<tr><td>Day</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>', '<tr><td>Mon</td>', '<td>SS</td>', '<td>DAA</td>', '<td>----</td>', '<td>----</td>', '<td>TOC</td>', '<td>OS</td>', '<td>----</td>', '<td>DMDW</td></tr>', '<tr><td>Tue</td>', '<td>DMDW</td>', '<td>LPlab</td>', '<td>LPlab</td>', '<td>LPlab</td>', '<td>SS</td>', '<td>DAA</td>', '<td>OS</td>', '<td>TOC</td></tr>', '<tr><td>Wed</td>', '<td>SS</td>', '<td>OS</td>', '<td>DAA</td>', '<td>TOC</td>', '<td>DMDW</td>', '<td>CDlab</td>', '<td>CDlab</td>', '<td>CDlab</td></tr>', '<tr><td>Thr</td>', '<td>DMDW</td>', '<td>DAA</td>', '<td>SS</td>', '<td>OS</td>', '<td>TOC</td>', '<td>GDlab</td>', '<td>GDlab</td>', '<td>GDlab</td></tr>', '<tr><td>Fri</td>', '<td>DMDW</td>', '<td>IOTlab</td>', '<td>IOTlab</td>', '<td>IOTlab</td>', '<td>TOC</td>', '<td>DAA</td>', '<td>SS</td>', '<td>OS</td></tr>', '<tr><td>Sat</td>', '<td>----</td>', '<td>----</td>', '<td>DAA</td>', '<td>SS</td>', '<td>TOC</td>', '<td>DMDW</td>', '<td>OS</td>', '<td>----</td></tr>']
+            </table>
+            <br><br>
+            
+              <button id="pdfButton"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzxA1IZaV_fN96xiySAwgY5iZiM-pIg9W9ig&usqp=CAU" style="height:30px;width:30px;"><b style="padding-bottom:5px;" class="text"> <center>&nbsp; &nbsp Download</center></b></button>
+  
+  </div>
+  </center>
+     <script>
+      var button = document.getElementById("pdfButton");
+      var makepdf = document.getElementById("generatePDF");
+      button.addEventListener("click", function () {
+         var mywindow = window.open("", "PRINT", "height=600,width=600");
+         mywindow.document.write(makepdf.innerHTML);
+         mywindow.document.close();
+         mywindow.focus();
+         mywindow.print();
+         return true;
+      });
+   </script>
+
+            </body>
+            </html>
+            
